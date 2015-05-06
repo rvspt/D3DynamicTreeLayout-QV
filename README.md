@@ -1,5 +1,5 @@
 # D3DynamicTreeLayout-QV
-Create a dynamic and visual hierarchy of related nodes with a simple node-parent node relationship
+Create a dynamic and visual hierarchy of related nodes with a simple node-parent node relationship in QlikView
 
 This extension has the following features:
   * Display the tree in vertical or horizontal orientation
