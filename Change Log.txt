@@ -1,0 +1,12 @@
+*********************** v1    - 2015-05-06 ***********************
+
+-First version of the extension
+
+*********************** v1.01 - 2015-06-08 ***********************
+
+- On Hover Tooltip: 
+  Changed tooltip from .text() to .html() to enable HTML formating
+  
+  Introducing an expression like:
+  	=100*rand()&'hello<br /><b style="color:#FFEEDD">this</b><br /> is<br /> an html formating example'
+  will render as an HTML and keep the formating
