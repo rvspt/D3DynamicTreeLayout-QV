@@ -1,6 +1,6 @@
 *********************** v1    - 2015-05-06 ***********************
 
--First version of the extension
+- First version of the extension
 
 *********************** v1.01 - 2015-06-08 ***********************
 
@@ -10,3 +10,17 @@
   Introducing an expression like:
   	=100*rand()&'hello<br /><b style="color:#FFEEDD">this</b><br /> is<br /> an html formating example'
   will render as an HTML and keep the formating
+
+*********************** v1.02 - 2015-09-02 ***********************
+
+- Corrected a bug that made the node names disappear
+
+- Tooltip now has not a default title. 
+  It will relly on the definition of the contents of the measure based in HTML syntax.
+  
+  Here is a simple example:
+  ='<h1>'&EmpName&'</h1><p>Value: <i><u>'&num(100*rand(),'#.##0,00')&'</u></i></p>'
+
+- Updated the "Example App/Tree Layout Examples.qvw" file to reflect the measure example depicted above 
+  in the "Example Customization (Vertical, including tooltip)" tab
+	
