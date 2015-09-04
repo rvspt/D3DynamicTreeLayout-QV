@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ExtensionObject Label="D3 - Tree Layout" Description="D3 Chart: Tree Layout v1.01" PropertiesPage="NewProperties.qvpp" PageHeight="50000">
+   <Dimension Label="Depth" Initial="Depth" TargetName="Depth" />
+   <Dimension Label="Node ID" Initial="Node ID" TargetName="Node ID" />
+   <Dimension Label="Parent ID" Initial="Parent ID" TargetName="Parent ID" />
+   <Dimension Label="Node Name" Initial="Node Name" TargetName="Node Name" />
+   <Measurement Label="Measure" Initial="Sum(Measure)"/>
+   <Text Label="Circle Stroke Color" Type="color" Initial="" Expression="#5C91BD"/>
+   <Text Label="Circle Stroke Width" Type="text" Initial="" Expression="1.5"/>
+   <Text Label="Circle Radius" Type="text" Initial="" Expression="4"/>
+   <Text Label="Parent Fill Color" Type="color" Initial="" Expression="#B0C4DE"/>
+   <Text Label="Child Fill Color" Type="color" Initial="" Expression="#FFFFFF"/>
+   <Text Label="Default Collapse Level" Type="text" Initial="" Expression="4"/>
+   <Text Label="Link Stroke Color" Type="color" Initial="" Expression="#CCCCCC"/>
+   <Text Label="Link Stroke Width" Type="text" Initial="" Expression="1.5"/>
+   <Text Label="Font Size" Type="text" Initial="" Expression="10"/>
+   <Text Label="Font Color" Type="color" Initial="" Expression="#000000"/>
+   <Text Label="Vertical Orientation" Type="checkbox" Initial="" Expression="0"/>
+	<Initiate Name="Chart.Title" value="D3 - Tree Layout" />
+	<Initiate Name="Caption.Text" Value="D3 - Tree Layout" />
+	<Initiate Name="Chart.BgColor.ColorHex" value="#EBEBEB" />
+  </ExtensionObject>

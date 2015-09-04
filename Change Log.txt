@@ -23,4 +23,7 @@
 
 - Updated the "Example App/Tree Layout Examples.qvw" file to reflect the measure example depicted above 
   in the "Example Customization (Vertical, including tooltip)" tab
-	
+
+*********************** v1.03 - 2015-09-04 ***********************
+
+- Corrected a bug that would throw an error when only one node was selected
