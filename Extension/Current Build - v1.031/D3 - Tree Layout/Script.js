@@ -278,7 +278,7 @@ function extension_Init()
 			    }
 			}
 
-			if(root.depth == 1 && !root.children){
+			if(!root.children){
 				update(root);
 			}
 			else
