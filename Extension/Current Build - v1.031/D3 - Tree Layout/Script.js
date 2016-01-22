@@ -129,8 +129,11 @@ function extension_Init()
 			  var nodes = tree.nodes(root).reverse();
 
 			  // Normalize for fixed-depth.
-			  _this.ExtSettings.Orientation==0 ? nodes.forEach(function(d) { d.y = d.depth * 180; }) : nodes.forEach(function(d) { d.y = d.depth * 120; });
-
+			  _this.ExtSettings.Inverter==0 ? 
+							_this.ExtSettings.Orientation==0 ? nodes.forEach(function(d) { d.y = d.depth * 160; }) : nodes.forEach(function(d) { d.y = d.depth * 90; })									
+							:
+							_this.ExtSettings.Orientation==0 ? nodes.forEach(function(d) { d.y = d.depth * -160; }) : nodes.forEach(function(d) { d.y = d.depth * -90; })	
+							;
 
 			  // Update the nodes…
 			  var node = vis.selectAll("g.node")
@@ -258,8 +261,12 @@ function extension_Init()
 			    .attr("width", width + margin.left + margin.right)
 			    .attr("height", height + margin.top + margin.bottom)
 			  	.append("svg:g")
-			    .attr("transform", _this.ExtSettings.Orientation==0 ? "translate(80,"+ margin.top + ")" : "translate("+ margin.bottom +","+ margin.top + ")");
-			
+			    .attr("transform",  _this.ExtSettings.Inverter==0 ?
+							_this.ExtSettings.Orientation==0 ? "translate("+ (40) + "," + margin.top + ")" : "translate("+ margin.bottom +","+ margin.top + ")"
+							:
+							_this.ExtSettings.Orientation==0 ? "translate("+ (width-40) + "," + margin.top + ")" : "translate("+ margin.bottom +","+ (height-40) + ")"
+							);
+																		
 
 			var data_for_chart = plantTree();
 			var jsontree = JSON.stringify(data_for_chart);
@@ -331,6 +338,7 @@ function extension_Init()
 			_this.ExtSettings.FontSize = _this.Layout.Text8.text;
 			_this.ExtSettings.FontColor = _this.Layout.Text9.text;
 			_this.ExtSettings.Orientation = _this.Layout.Text10.text;
+			_this.ExtSettings.Inverter = _this.Layout.Text11.text;
 			_this.ExtSettings.MaxDepth = _this.Data.Rows[_this.Data.Rows.length-1][0].text;
 			_this.ExtSettings.MinDepth = _this.Data.Rows[0][0].text;
 		};
