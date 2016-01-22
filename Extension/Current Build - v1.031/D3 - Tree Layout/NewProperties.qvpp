@@ -38,6 +38,10 @@
 			<div class='prop-grid_span-10 prop-grid_last'>
 				<div class='prop-grid_clear prop-grid_span-1' avq='prop_checkbox:.Chart.Text.10.Content'></div>
 			</div><br />
+			<div class='prop-grid_clear prop-grid_prepend-1 prop-grid_span-5' avq='prop_label'>Invert Tree Graph</div>
+			<div class='prop-grid_span-10 prop-grid_last'>
+				<div class='prop-grid_clear prop-grid_span-1' avq='prop_checkbox:.Chart.Text.11.Content'></div>
+			</div><br />
 		</div>
 		<h3 class="prop-h3 accordion-shadow">
 			<a href="#">
