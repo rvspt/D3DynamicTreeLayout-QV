@@ -27,3 +27,7 @@
 *********************** v1.03 - 2015-09-04 ***********************
 
 - Corrected a bug that would throw an error when only one node was selected
+
+*********************** v1.1 - 2016-01-23 ***********************
+
+- Added right-to-left and bottom-up orientations. Contribution of KoenBal.
