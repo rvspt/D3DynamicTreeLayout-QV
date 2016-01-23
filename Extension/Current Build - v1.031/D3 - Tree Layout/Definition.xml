@@ -16,6 +16,7 @@
    <Text Label="Font Size" Type="text" Initial="" Expression="10"/>
    <Text Label="Font Color" Type="color" Initial="" Expression="#000000"/>
    <Text Label="Vertical Orientation" Type="checkbox" Initial="" Expression="0"/>
+   <Text Label="Invert Tree Graph" Type="checkbox" Initial="" Expression="0"/>
 	<Initiate Name="Chart.Title" value="D3 - Tree Layout" />
 	<Initiate Name="Caption.Text" Value="D3 - Tree Layout" />
 	<Initiate Name="Chart.BgColor.ColorHex" value="#EBEBEB" />
